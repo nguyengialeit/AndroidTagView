@@ -159,7 +159,7 @@ public class TagContainerLayout extends ViewGroup {
     /**
      * TagView typeface
      */
-    private Typeface mTagTypeface = Typeface.DEFAULT;
+    private Typeface mTagTypeface = Typeface.DEFAULT_BOLD;
 
     /**
      * Whether TagView can clickable(default unclickable)
