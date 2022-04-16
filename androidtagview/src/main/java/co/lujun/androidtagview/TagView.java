@@ -150,7 +150,7 @@ public class TagView extends View {
     private Runnable mLongClickHandle = new Runnable() {
         @Override
         public void run() {
-            if (!isMoved && !isUp){
+            if (!isMoved && !isUp && getParent() != null){
                 int state = ((TagContainerLayout)getParent()).getTagViewState();
                 if (state == ViewDragHelper.STATE_IDLE){
                     isExecLongClick = true;
